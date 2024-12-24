@@ -1,0 +1,100 @@
+h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  width: 100%;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.profile-bar {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #55828B;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  width: 95%;
+  place-self: center;
+  max-height: 18rem;
+}
+
+.profile-img img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10rem;
+}
+
+.data * {
+  margin-bottom: 1.5rem;
+}
+
+.squares {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.square {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #C9E4CA;
+  border-radius: 1rem;
+  color: #364958;
+  padding: 2rem 3rem;
+}
+
+.square h3{
+  text-align: center;
+}
+
+.messages-square {
+  overflow-x: hidden;
+}
+
+.messages-square-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.message-container {
+  display: grid;
+  grid-template-columns: 6rem auto;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.message span {
+  font-size: 1.35rem;
+}
+
+.message-time {
+  font-size: 1.32rem;
+  color: #848684;
+}
+
+@media (min-width: 1080px) {
+  .home-container {
+    grid-template-rows: 22vh auto;
+    height: 100%;
+  }
+  .container_home_height {
+    height: 100%;
+  }
+  .squares {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .square {
+    height: 100%;
+  }
+}

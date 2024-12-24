@@ -1,0 +1,165 @@
+.container_profile_height {
+  height: 100%;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  padding: 2rem;
+  height: 100%;
+  gap: 1rem;
+}
+
+.big-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.big-picture img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.profile-squares {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+}
+
+.friend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: hidden;
+}
+
+.friend {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.friend-thumbnail {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+}
+
+.friend-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.friend-user-info h5{
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+h5 {
+  margin: 0;
+}
+
+.friends-square p{
+  text-align: center;
+}
+
+.friends-length {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.friends-length p:last-child {
+  color: blue;
+  cursor: pointer;
+}
+
+.edit-profile-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.edit-profile-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: #55828B;
+  padding: 2rem;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.edit-profile-modal-content h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.edit-profile-modal-content form {
+  display: grid;
+  gap: 1rem;
+}
+
+.edit-profile-modal-content label {
+  font-weight: 600;
+}
+
+.edit-profile-modal-content input {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.edit-profile-modal-content textarea {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  resize: vertical;
+}
+
+.edit-profile-modal-content button {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-profile-modal-content button:hover {
+  background-color: rgba(40, 65, 69, 0.9);
+  color: #fff;
+}
+
+.options-square button {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #55828B;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.options-square button:hover {
+  background-color: rgba(40, 65, 69, 0.9);
+}

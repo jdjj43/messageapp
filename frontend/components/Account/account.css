@@ -1,0 +1,124 @@
+.content_account {
+  height: 100%;
+}
+
+.login-box {
+  padding: 5rem;
+}
+
+p {
+  margin: 0;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #87BBA2;
+  padding: 3rem;
+  border-radius: 1rem;
+  color: #364958;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.login-container h1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-container input {
+  height: 4rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 0 1rem;
+}
+
+.button-container {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: end;
+}
+
+.signup-link {
+  color: blue;
+  cursor: pointer;
+}
+
+.errors-container {
+  margin: 0 auto;
+  width: 30%;
+  margin-top: 2rem;
+  background-color: #f44336;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.errors-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.register-container form {
+  margin-top: 2rem;
+}
+
+.register-container h1 {
+  text-align: center;
+}
+
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: #87BBA2;
+  padding: 3rem;
+  border-radius: 1rem;
+  color: #364958;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.register-double-input {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.register-double-input .input-container {
+  width: 100%;
+}
+
+.registered {
+  max-width: 35%;
+}
+
+.registered h1 {
+  margin-bottom: 5rem;
+}
+
+.registered p {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.text {
+  margin-bottom: 3rem;
+}
+
+.registered span {
+  color: #225c86;
+  cursor: pointer;
+}
